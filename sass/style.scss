@@ -1,6 +1,7 @@
 /* Fonts */
 $font-primary: 'Montserrat';
 $font-secondary: 'Roboto Slab';
+$font-serif: 'Roboto Slab';
 
 /* Colors */
 $color-yellow: #fed136;
@@ -10,3 +11,53 @@ $color-light-grey: #777777;
 $color-dark-grey: #737373;
 $color-card-header: #333333;
 $color-section-header: #323232;
+
+body {
+    margin: 0;
+    font-family: $font-primary;
+}
+/* Splash */
+.splash {
+    height: 700px;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/1670457/pexels-photo-1670457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  .splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .page-title {
+    position: relative;
+    color: $color-white;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    padding-bottom: 50px;
+    font-family: $font-serif;
+  }
+  .page-subtitle {
+    color: $color-white;
+    font-size: 75px;
+    margin: 0;
+    font-family: $font-primary;
+    padding-bottom: 60px;
+  }
+  .btn-splash {
+      color: $color-white;
+      background-color: $color-yellow;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 25px 52px;
+      border-radius: 5px;
+
+  }

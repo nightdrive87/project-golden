@@ -1,0 +1,59 @@
+/* Fonts */
+/* Colors */
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+/* Splash */
+.splash {
+  height: 700px;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/1670457/pexels-photo-1670457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.splash::after {
+  filter: brightness(50%);
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  position: relative;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  padding-bottom: 50px;
+  font-family: "Roboto Slab";
+}
+
+.page-subtitle {
+  color: #fff;
+  font-size: 75px;
+  margin: 0;
+  font-family: "Montserrat";
+  padding-bottom: 60px;
+}
+
+.btn-splash {
+  color: #fff;
+  background-color: #fed136;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 25px 52px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
