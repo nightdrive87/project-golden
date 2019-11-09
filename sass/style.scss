@@ -11,10 +11,12 @@ $color-light-grey: #777777;
 $color-dark-grey: #737373;
 $color-card-header: #333333;
 $color-section-header: #323232;
+$color-service-card-header: #222222;
 
 body {
     margin: 0;
     font-family: $font-primary;
+    font-weight: 400;
 }
 /* Splash */
 .splash {
@@ -61,3 +63,64 @@ body {
       border-radius: 5px;
 
   }
+  .section-title {
+      padding-top: 120px;
+      text-align: center;
+      margin: 0;
+
+  }
+  .section-title h1 {
+      font-family: $font-primary;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: $color-section-header;
+      padding-bottom: 22px;
+  }
+  .section-title h2 {
+      font-family: $font-serif;
+      font-size: 16px;
+      color: $color-light-grey;
+      font-style: italic;
+  }
+  .service-card {
+      text-align: center;
+      margin-bottom: 70px;
+  }
+  .service-card i {
+      font-size: 64px;
+      color: $color-yellow;
+      border-radius: 100%;
+      border: 6px solid $color-yellow;
+      padding: 10px;
+      margin-bottom: 30px;
+  }
+  .service-card h1 {
+      font-size: 18px;
+      color: $color-service-card-header;
+      font-weight: 700;
+      padding-bottom: 20px;
+  }
+  .service-card p {
+      font-size: 14px;
+      font-family: $font-secondary;
+      color: $color-light-grey;
+      font-weight: 400;
+
+  }
+  .test {
+      background-color: red;
+      padding: 15px 0;
+  }
+//   /*w sekcji portfolio daj se diva zdef mu szer wys np po 300px wrzuc obrazek i object-fit cover, pamietaj ze tlo szare*/
+//   /*tytuly pod obrazkami wrzuc w diva ktoremu nadasz paddingi i bialy bckgrnd
+
+// <div class="col-4 service-card">
+//                     <i class="fas fa-shopping-basket"></i>
+//                     <div class="portfolio-img">
+//                         <img src="" alt="">
+//                     </div>
+//                     <div class="test">
+//                             <h1>E-commerce</h1>
+//                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis porro delectus aliquid nisi deserunt nobis!</p>
+
+//                     </div>
