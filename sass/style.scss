@@ -1,9 +1,9 @@
-/* Fonts */
+//-------------------------------------------------------------------------------/* Fonts */
 $font-primary: 'Montserrat';
 $font-secondary: 'Roboto Slab';
 $font-serif: 'Noto Serif';
 
-/* Colors */
+//-------------------------------------------------------------------------------/* Colors */
 $color-yellow: #fed136;
 $color-white: #fff;
 $color-black: #000;
@@ -14,12 +14,55 @@ $color-section-header: #323232;
 $color-service-card-header: #222222;
 $color-portfolio: #f7f7f7;
 
+//trick clearfix, który sprawia, 
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
 body {
     margin: 0;
     font-family: $font-primary;
     font-weight: 400;
 }
-/* Splash */
+.logo {
+    float: left;
+}
+//-------------------------------------------------------------------------------/* Navigation */
+.menu {
+    float:right;
+}
+.navigation {
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    padding: 50px;
+    position: absolute;
+  }
+  .navigation {
+    ul {
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      position: relative;
+      padding-right:40px;
+    }
+    a {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 14px;
+      font-family: $font-primary;
+    }
+  }
+.logo a {
+    color: $color-yellow;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+//-------------------------------------------------------------------------------/* Splash */
 .splash {
     height: 700px;
     position: relative;
@@ -61,8 +104,8 @@ body {
       text-decoration: none;
       padding: 25px 52px;
       border-radius: 5px;
-
   }
+  //-------------------------------------------------------------------------------/* Services */
   .services {
       padding-top: 120px;
       margin-bottom: 120px;
@@ -70,7 +113,6 @@ body {
   .section-title {
       text-align: center;
       margin: 0;
-
   }
   .section-title h1 {
       font-family: $font-primary;
@@ -112,6 +154,7 @@ body {
       color: $color-light-grey;
       font-weight: 400;
   }
+  //-------------------------------------------------------------------------------/* Portfolio */
 .portfolio {
     background-color: $color-portfolio;
     padding-top: 120px;
@@ -149,17 +192,25 @@ body {
     color: $color-light-grey;
     font-style: italic;
 }
-
-//   /*w sekcji portfolio daj se diva zdef mu szer wys np po 300px wrzuc obrazek i object-fit cover, pamietaj ze tlo szare*/
-//   /*tytuly pod obrazkami wrzuc w diva ktoremu nadasz paddingi i bialy bckgrnd
-
-// <div class="col-4 service-card">
-//                     <i class="fas fa-shopping-basket"></i>
-//                     <div class="portfolio-img">
-//                         <img src="" alt="">
-//                     </div>
-//                     <div class="test">
-//                             <h1>E-commerce</h1>
-//                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis porro delectus aliquid nisi deserunt nobis!</p>
-
-//                     </div>
+//-------------------------------------------------------------------------------/* Footer */
+.footer-description {
+    font-size: 14px;
+    transform: translateY(25%);
+}
+.footer {
+    padding: 50px 0;
+}
+.footer-icons ul li {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  background-color: #323232;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+  .footer-icons a {
+    color: $color-white;
+    text-decoration: none;
+  }

@@ -1,12 +1,56 @@
-/* Fonts */
-/* Colors */
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat";
   font-weight: 400;
 }
 
-/* Splash */
+.logo {
+  float: left;
+}
+
+.menu {
+  float: right;
+}
+
+.navigation {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+  padding: 50px;
+  position: absolute;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline-block;
+  position: relative;
+  padding-right: 40px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+.logo a {
+  color: #fed136;
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-size: 14px;
+}
+
 .splash {
   height: 700px;
   position: relative;
@@ -153,5 +197,30 @@ body {
   font-family: "Noto Serif";
   color: #777777;
   font-style: italic;
+}
+
+.footer-description {
+  font-size: 14px;
+  transform: translateY(25%);
+}
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer-icons ul li {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  background-color: #323232;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer-icons a {
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
