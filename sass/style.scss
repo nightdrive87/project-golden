@@ -116,6 +116,39 @@ body {
     background-color: $color-portfolio;
     padding-top: 120px;
 }
+.portfolio-item {
+    width: 290px;
+    margin-bottom: 50px;
+}
+.portfolio-image {
+    width: 290px;
+    height: 300px;
+    object-fit: cover;
+}
+.portfolio-image img {
+    width: 290px;
+    height: 300px;
+    object-fit: cover;
+}
+.portfolio-description {
+    width: 290px;
+    height: 92px;
+    background-color: $color-white;
+    text-align: center;
+    padding: 30px 0;
+}
+.portfolio-description h1 {
+    font-size: 18px;
+    padding-bottom: 6px;
+    font-family: $font-primary;
+    color: $color-service-card-header;
+}
+.portfolio-description h2 {
+    font-size: 14px;
+    font-family: $font-serif;
+    color: $color-light-grey;
+    font-style: italic;
+}
 
 //   /*w sekcji portfolio daj se diva zdef mu szer wys np po 300px wrzuc obrazek i object-fit cover, pamietaj ze tlo szare*/
 //   /*tytuly pod obrazkami wrzuc w diva ktoremu nadasz paddingi i bialy bckgrnd

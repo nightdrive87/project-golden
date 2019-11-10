@@ -113,4 +113,45 @@ body {
   background-color: #f7f7f7;
   padding-top: 120px;
 }
+
+.portfolio-item {
+  width: 290px;
+  margin-bottom: 50px;
+}
+
+.portfolio-image {
+  width: 290px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-image img {
+  width: 290px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-description {
+  width: 290px;
+  height: 92px;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.portfolio-description h1 {
+  font-size: 18px;
+  padding-bottom: 6px;
+  font-family: "Montserrat";
+  color: #222222;
+}
+
+.portfolio-description h2 {
+  font-size: 14px;
+  font-family: "Noto Serif";
+  color: #777777;
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */
